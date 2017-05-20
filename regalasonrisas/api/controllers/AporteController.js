@@ -1,13 +1,13 @@
 /**
- * BeneficiariosController
+ * AporteController
  *
- * @description :: Server-side logic for managing usuarios
+ * @description :: Server-side logic for managing aportes
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
 module.exports = {
 	listar : function(req, res){
-		Beneficiario
+		Aporte
 			.find()
 			.then(function(registros){
 				res.json(registros)
@@ -19,7 +19,7 @@ module.exports = {
 
 	detallar : function(req, res){
 		var filtro = {id : req.params.id}
-		Beneficiario
+		Aporte
 			.find()
 			.where(filtro)
 			.then(function(registros){
@@ -33,7 +33,7 @@ module.exports = {
 	insertar : function(req, res){
 		var registro = req.allParams()
 
-		Beneficiario
+		Aporte
 			.create(registro)
 			.then(function(registros){
 				res.json(registros)
@@ -47,7 +47,7 @@ module.exports = {
 		var registro = req.allParams()
 		var filtro = {id : req.params.id}
 
-		Beneficiario
+		Aporte
 			.update(filtro, registro)
 			.then(function(registros){
 				res.json(registros)
@@ -60,7 +60,7 @@ module.exports = {
 	eliminar : function(req, res){
 		var filtro = {id : req.params.id}
 
-		Beneficiario
+		Aporte
 			.destroy(filtro)
 			.then(function(registros){
 				res.json(registros)

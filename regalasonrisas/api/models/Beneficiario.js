@@ -8,13 +8,20 @@
 module.exports = {
 
   attributes: {
-  	name : "string",
-  	birthDate : "string",
-  	history : "string",
-  	picture : "string"
+  	nombres : "string",
+  	edad : "int",
+  	sexo : "string",
+  	descripcion : "string",
+  	historia : "string",
+  	imagen : "string",
   }
 };
 
 
-
-//Beneficiario.create({name : "Ronald Requena", history : "lalallaal", picture:"lolololo"}).exec(console.log)
+//Beneficiario.find().exec(console.log)
+//Beneficiario.create({nombres : "Juanita Roman", edad : 3, sexo:"Mujer", descripcion:"Juanita "}).exec(console.log)
+//Beneficiario.create({nombres : "Julio Paredez", edad : 5, sexo:"Hombre", descripcion:"Juanita "}).exec(console.log)
+//Beneficiario.create({nombres : "Carlos Quispe", edad : 6, sexo:"Hombre", descripcion:"Juanita "}).exec(console.log)
+//Beneficiario.create({nombres : "Edson Durand", edad : 6, sexo:"Hombre", descripcion:"Juanita "}).exec(console.log)
+//Beneficiario.create({nombres : "Manuel Huaman", edad : 4, sexo:"Hombre", descripcion:"Juanita "}).exec(console.log)
+//Beneficiario.create({nombres : "Paula Tasaico", edad : 8, sexo:"Mujer", descripcion:"Juanita "}).exec(console.log)

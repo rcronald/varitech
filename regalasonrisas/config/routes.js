@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,53 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+ /****BENEFICIARIOS****/
+  'get /beneficiarios': {
+    controller: "BeneficiarioController",
+    action: "listar"
+  },
+  'get /beneficiarios/:id': {
+    controller: "BeneficiarioController",
+    action: "detallar"
+  },
+  'post /beneficiarios': {
+    controller: "BeneficiarioController",
+    action: "insertar"
+  },
+  'put /beneficiarios/:id': {
+    controller: "BeneficiarioController",
+    action: "actualizar"
+  },
+  'delete /beneficiarios/:id': {
+    controller: "BeneficiarioController",
+    action: "eliminar"
+  },
+
+ /****USUARIOS****/
+  'get /usuarios': {
+    controller: "UsuarioController",
+    action: "listar"
+  },
+  'get /usuarios/:id': {
+    controller: "UsuarioController",
+    action: "detallar"
+  },
+  'post /usuarios': {
+    controller: "UsuarioController",
+    action: "insertar"
+  },
+  'put /usuarios/:id': {
+    controller: "UsuarioController",
+    action: "actualizar"
+  },
+  'delete /usuarios/:id': {
+    controller: "UsuarioController",
+    action: "eliminar"
+  },
+  'post /usuarios/login': {
+    controller: "UsuarioController",
+    action: "login"
+  },
 
 };
