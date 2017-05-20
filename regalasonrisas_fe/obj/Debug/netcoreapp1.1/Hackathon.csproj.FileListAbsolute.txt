@@ -6,3 +6,11 @@
 /Users/carlosq2207/Documents/Devs/Hackathon/obj/Debug/netcoreapp1.1/Hackathon.AssemblyInfo.cs
 /Users/carlosq2207/Documents/Devs/Hackathon/obj/Debug/netcoreapp1.1/Hackathon.dll
 /Users/carlosq2207/Documents/Devs/Hackathon/obj/Debug/netcoreapp1.1/Hackathon.pdb
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/Debug/netcoreapp1.1/Hackathon.deps.json
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/Debug/netcoreapp1.1/Hackathon.runtimeconfig.json
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/Debug/netcoreapp1.1/Hackathon.runtimeconfig.dev.json
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/Debug/netcoreapp1.1/Hackathon.dll
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/Debug/netcoreapp1.1/Hackathon.pdb
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/obj/Debug/netcoreapp1.1/Hackathon.AssemblyInfo.cs
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/obj/Debug/netcoreapp1.1/Hackathon.dll
+/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/obj/Debug/netcoreapp1.1/Hackathon.pdb

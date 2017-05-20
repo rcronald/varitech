@@ -9652,16 +9652,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carlosq2207/Documents/Devs/Hackathon/Hackathon.csproj",
+      "projectUniqueName": "/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/Hackathon.csproj",
       "projectName": "Hackathon",
-      "projectPath": "/Users/carlosq2207/Documents/Devs/Hackathon/Hackathon.csproj",
-      "outputPath": "/Users/carlosq2207/Documents/Devs/Hackathon/obj/",
+      "projectPath": "/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/Hackathon.csproj",
+      "outputPath": "/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/Hackathon.dll": "/Users/carlosq2207/Documents/Devs/Hackathon/bin/placeholder/netcoreapp1.1/Hackathon.dll"
+        "lib/netcoreapp1.1/Hackathon.dll": "/Users/carlosq2207/Documents/Devs/Hack/varitech/regalasonrisas_fe/bin/placeholder/netcoreapp1.1/Hackathon.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

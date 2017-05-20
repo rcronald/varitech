@@ -1,3 +1,7 @@
+@{
+    Layout = null;
+}
+
 <html lang="en">
 
 <head>
@@ -33,13 +37,60 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 <div id="wrapper">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="top-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6">
+					<p class="bold text-left">Monday - Saturday, 8am to 10pm </p>
+					</div>
+					<div class="col-sm-6 col-md-6">
+					<p class="bold text-right">Call us now +62 008 65 001</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="container navigation">
+		
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="/Content/img/logo.png" alt="" width="150" height="40" />
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#intro">Home</a></li>
+				<li><a href="#service">Service</a></li>
+				<li><a href="#doctor">Doctors</a></li>
+				<li><a href="#facilities">Facilities</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>More <b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+				    <li><a href="index.html">Home CTA</a></li>
+					<li><a href="index-form.html">Home Form</a></li>
+					<li><a href="index-video.html">Home video</a></li>
+				  </ul>
+				</li>
+			  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
     <section id="doctor" class="home-section bg-gray paddingbot-60">
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">Doctors</h2>
+					<h2 class="h-bold">Beneficiarios</h2>
 					<p>Ea melius ceteros oportere quo, pri habeo viderer facilisi ei</p>
 					</div>
 					</div>
@@ -53,18 +104,18 @@
 				<div class="col-lg-12">
 				
             <div id="filters-container" class="cbp-l-filters-alignLeft">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All (<div class="cbp-filter-counter"></div>)</div>
-                <div data-filter=".cardiologist" class="cbp-filter-item">Cardiologist (<div class="cbp-filter-counter"></div>)</div>
-                <div data-filter=".psychiatrist" class="cbp-filter-item">Psychiatrist (<div class="cbp-filter-counter"></div>)</div>
-                <div data-filter=".neurologist" class="cbp-filter-item">Neurologist (<div class="cbp-filter-counter"></div>)</div>
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Todos (<div class="cbp-filter-counter"></div>)</div>
+                <div data-filter=".ninios" class="cbp-filter-item">Niños (<div class="cbp-filter-counter"></div>)</div>
+                <div data-filter=".ancianos" class="cbp-filter-item">Ancianos (<div class="cbp-filter-counter"></div>)</div>
+                <div data-filter=".madres" class="cbp-filter-item">Madres (<div class="cbp-filter-counter"></div>)</div>
             </div>
 		
             <div id="grid-container" class="cbp-l-grid-team">
-                <ul>
-                    <li class="cbp-item psychiatrist">
-                        <a href="doctors/member1.html" class="cbp-caption cbp-singlePage">
+                <ul id= "ulDonate">
+                    <li class="cbp-item ancianos">
+                        <a asp-controller="Home" asp-action="BeneficiarioDetail" class="cbp-caption cbp-singlePage">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="/Content/img/team/1.jpg" alt="" width="100%">
+                                <img src="/images/imghackathon/anciana/anaciana1.jpg" alt="" width="100%">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
@@ -74,13 +125,13 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Alice Grue</a>
-                        <div class="cbp-l-grid-team-position">Psychiatrist</div>
+                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Anciana 1</a>
+                        <div class="cbp-l-grid-team-position">Data</div>
                     </li>
-                    <li class="cbp-item cardiologist">
+                    <li class="cbp-item ancianos">
                         <a href="doctors/member2.html" class="cbp-caption cbp-singlePage">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="/Content/img/team/2.jpg" alt="" width="100%">
+                                <img src="/images/imghackathon/anciana/anciana2.jpg" alt="" width="100%">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
@@ -93,10 +144,10 @@
                         <a href="doctors/member2.html" class="cbp-singlePage cbp-l-grid-team-name">Joseph Murphy</a>
                         <div class="cbp-l-grid-team-position">Cardiologist</div>
                     </li>
-                    <li class="cbp-item cardiologist">
+                    <li class="cbp-item ancianos">
                         <a href="doctors/member3.html" class="cbp-caption cbp-singlePage">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="/Content/img/team/3.jpg" alt="" width="100%">
+                                <img src="/images/imghackathon/anciana/anciana3.jpg" alt="" width="100%">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
@@ -109,10 +160,10 @@
                         <a href="doctors/member3.html" class="cbp-singlePage cbp-l-grid-team-name">Alison Davis</a>
                         <div class="cbp-l-grid-team-position">Cardiologist</div>
                     </li>
-                    <li class="cbp-item neurologist">
+                    <li class="cbp-item ancianos">
                         <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="/Content/img/team/4.jpg" alt="" width="100%">
+                                <img src="/images/imghackathon/anciana/anciana4.jpg" alt="" width="100%">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
@@ -125,8 +176,280 @@
                         <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
                         <div class="cbp-l-grid-team-position">Neurologist</div>
                     </li>
-
+                    <li class="cbp-item ancianos">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/anciana/anciana5.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ancianos">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/anciana/anciana6.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre1.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre2.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre3.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre4.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre5.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre6.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre4.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre5.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item madres">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/madre/madre6.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño1.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño2.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño3.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño4.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño5.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
+                    <li class="cbp-item ninios">
+                        <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/images/imghackathon/niños/niño6.jpg" alt="" width="100%">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                        <div class="cbp-l-grid-team-position">Neurologist</div>
+                    </li>
                 </ul>
+                
             </div>
 			</div>
 			</div>
@@ -134,4 +457,48 @@
 
 	</section>
 </div>
+
+	<!-- Core JavaScript Files -->
+    <script src="/Content/js/jquery.min.js"></script>	 
+    <script src="/Content/js/bootstrap.min.js"></script>
+    <script src="/Content/js/jquery.easing.min.js"></script>
+	<script src="/Content/js/wow.min.js"></script>
+	<script src="/Content/js/jquery.scrollTo.js"></script>
+	<script src="/Content/js/jquery.appear.js"></script>
+	<script src="/Content/js/stellar.js"></script>
+	<script src="/Content/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+	<script src="/Content/js/owl.carousel.min.js"></script>
+	<script src="/Content/js/nivo-lightbox.min.js"></script>
+    <script src="/Content/js/custom.js"></script>
+    <script src="/js/donate.js"></script>
+    <script>
+        $(document).ready(function(){
+            var registers = donatejs.obtenerRegistros;
+            var html = $("#ulDonate");
+            var htmlLocal = "";
+            debugger;
+            var widthDynamic = 0;
+            var heightDynamic = 0;
+            var totalHeight= 0;
+            for(var i = 0; i< registers.length; i++){
+                var item = registers[i];
+                var total = widthDynamic*295;
+                if(total==885){
+                    totalHeight= heightDynamic*313;
+                    total = 0;
+                }
+                htmlLocal+='<li class="cbp-item ancianos" style="width: 255px; height: 263px; transform: translate3d('+total+'px,'+totalHeight+'px, 0px);" ><a href="/Home/BeneficiarioDetail?Id='+item.IdBeneficiario+' class="cbp-caption cbp-singlePage"><div class="cbp-caption-defaultWrap">';
+                htmlLocal+='<img src="'+item.url+'"alt="" width="100%">';
+                htmlLocal+='</div><div class="cbp-caption-activeWrap"><div class="cbp-l-caption-alignCenter"><div class="cbp-l-caption-body"><div class="cbp-l-caption-text">VIEW PROFILE</div>';
+                htmlLocal+='</div></div></div></a><a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Anciana 1</a>';
+                htmlLocal+='<div class="cbp-l-grid-team-position">'+item.Name+'</div></li>';
+                widthDynamic ++;
+                heightDynamic++;
+            }
+
+           html.html(htmlLocal);
+        });
+    </script>
+
 </body>
+</html>

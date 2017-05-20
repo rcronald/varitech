@@ -39,6 +39,11 @@ namespace Hackathon.Controllers
             return View();
         }
 
+        public IActionResult BeneficiarioDetail(int id)
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
